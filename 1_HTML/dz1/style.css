@@ -1,14 +1,63 @@
 body{
     background-color: lightgray;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 500px;
-    min-width: 200px;
-    inline-size: 50%;
-    max-inline-size: 1000px;
-
+    margin: 40px auto;
+    max-width: 250px;
+    min-width: 100px;
+    max-height: 470px;
+    min-height: 470px;
     background-color: white;
+    border-radius: 10px;
+}
 
+.picture{
+    background-image: url("img/kamera.jpg");
+    margin: 0 auto;
+    background-position-x: center;
+    background-position-y: center;
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.picture-text {
+    color: white;
+    background-color: #a55320;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    margin: 10px;
+}
+
+.content {
+    margin: 15px;
+    text-align: left;
+}
+
+figcaption {
+    text-align: left;
+    padding-bottom: 20px;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "🔸";
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 24px;
+    margin: 10px 0;
 }
