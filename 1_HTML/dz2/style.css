@@ -1,3 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 100vh;
+    min-block-size: 100vh;
+    
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
 h1{
-    color: blue;
+    text-align: center;
+    color: rgb(31, 66, 112);
+    padding: 100px 0;
+    font-size: 50px;
 }
