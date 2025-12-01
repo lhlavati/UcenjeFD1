@@ -19,9 +19,66 @@ body{
     border-radius: 1rem;
 }
 
-h1{
+header h1{
     text-align: center;
     color: rgb(31, 66, 112);
     padding: 100px 0;
     font-size: 50px;
+}
+
+header h3{
+    text-align: center;
+    color: rgb(80, 80, 80);
+    margin-top: -60px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 10px;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.desc{
+    margin: 35px 0;
+}
+
+.picture{
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.picture img{
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    padding-top: 18px;
+}
+
+.caption {
+    color: gray;
+    font-style: italic;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.container strong{
+    color: darkorange;
+}
+
+.keyVersions dl{
+    background: rgb(255, 252, 252);
+    list-style-type: decimal-leading-zero;
+    border-inline-start: 5px solid rgb(30, 125, 214);
+    padding: 0 50px;
+}
+
+.keyVersions dt{
+    margin: 0 50px;
+    padding: 5px 0;
 }
