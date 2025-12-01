@@ -71,14 +71,49 @@ header h3{
     color: darkorange;
 }
 
-.keyVersions dl{
+.versions dl{
     background: rgb(255, 252, 252);
     list-style-type: decimal-leading-zero;
-    border-inline-start: 5px solid rgb(30, 125, 214);
+    border-inline-start: 5px solid #1e7dd6;
     padding: 0 50px;
+
 }
 
-.keyVersions dt{
+.versions dt{
     margin: 0 50px;
     padding: 5px 0;
+}
+
+.structure blockquote{
+    background-color: rgb(58, 58, 63);
+    color: white;
+    border-left: 10px solid rgb(248, 186, 51);
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 5px 0 0 15px;
+}
+
+.terms{
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px 0 50px 0;
+    font-size: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.terms em{
+    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
+    color: #1e7dd6;
+    padding: 10px;
+}
+
+.quote blockquote{
+    background-color: rgb(252, 183, 183);
+    border-left: 5px solid red;
+    margin: 20px 0;
+    padding: 10px;
 }
