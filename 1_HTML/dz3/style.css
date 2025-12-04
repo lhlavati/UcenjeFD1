@@ -1,0 +1,19 @@
+section {
+    display: grid;
+    grid-template-areas: 
+    "p1 p1 p1"
+    "p2 p3 p4"
+    "p5 p5 p5";
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.p1{grid-area: p1;}
+.p2{grid-area: p2;}
+.p3{grid-area: p3;}
+.p4{grid-area: p4;}
+.p5{grid-area: p5;}
+
+div{
+    background-color: green;
+}
