@@ -50,7 +50,7 @@ section h2 {
     padding: 20px 0px;
 }
 
-.grid {
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,14 +61,14 @@ section h2 {
     padding: 40px;
 }
 
-.grid div {
+.flex div {
     background-color: #2cb7da;
     padding: 15px 10%;
     font-weight: bold;
     color: white;
 }
 
-.grid1 {
+.grid {
     display: grid;
     grid-template-areas: 
     "z z z"
@@ -88,7 +88,7 @@ section h2 {
 .s{grid-area: s; background-color: rgb(40, 54, 119);}
 .p{grid-area: p; background-color: rgb(36, 223, 129);}
 
-.grid1 div {
+.grid div {
     text-align: center;
     padding: 15px 10%;
     font-weight: bold;
@@ -97,4 +97,45 @@ section h2 {
 
 span {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.left{
+    float: left;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+}
+
+.columns {
+    columns: 3;
+    column-gap: 2rem;
+    column-rule: 1px solid #ccc;
+    column-fill: balance;
+    text-align: justify;
+}
+
+.info {
+    margin: 0 auto;
+    background-color: rgb(224, 208, 179);
+    border-inline-start: 5px solid orange;
+    padding: 15px 40px;
+}
+
+.info h3 {
+    padding: 15px 0;
+}
+
+footer {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 25px auto;
 }
