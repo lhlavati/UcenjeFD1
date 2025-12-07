@@ -99,14 +99,17 @@ span {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.float {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
 .left{
     float: left;
     background-color: red;
     color: white;
     text-align: center;
     margin: 0 auto;
-    width: 100px;
-    height: 80px;
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -118,6 +121,7 @@ span {
     column-gap: 2rem;
     column-rule: 1px solid #ccc;
     column-fill: balance;
+    padding: 0px 10px;
     text-align: justify;
 }
 
