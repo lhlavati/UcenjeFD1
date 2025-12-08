@@ -5,15 +5,17 @@ body {
 
 .container {
   background-color: white;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 30px;
   width: 25%;
   border-radius: 10px;
 }
 
-.icon {
-  font-size: 80px;
-  text-align: center;
+img {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
 
 fieldset {
@@ -47,7 +49,7 @@ input[type="password"] {
 }
 
 button {
-  background-color: #ffc83d;
+  background-color: #39A2DB;
   font-weight: bold;
   font-size: 15px;
   color: white;
