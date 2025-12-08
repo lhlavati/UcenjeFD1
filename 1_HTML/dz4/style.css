@@ -5,15 +5,78 @@ body {
 
 .container {
     background-color: white;
-    margin: 0 auto;
+    /* margin: 0 auto;
     width: 500px;
-    height: 400px;
+    height: 400px; */
+    margin: 50px auto;
+    padding: 30px;
+    width: 25%;
     border-radius: 10px;
-    
 }
 
 .icon {
     font-size: 80px;
-    padding: 30px;
     text-align: center;
 }
+
+fieldset {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 95%;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+}
+
+.label {
+    display: block;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FFC83D;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    border: none;
+}
+
+caption {
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(70, 70, 90);
+}
+
+thead {
+    background-color: #ededed;
+}
+

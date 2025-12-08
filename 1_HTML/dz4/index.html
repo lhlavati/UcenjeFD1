@@ -13,19 +13,55 @@
         <fieldset>
           <legend>Sigurna Prijava</legend>
 
-          <label for="ime">Korisničko ime</label>
-          <br />
-          <input type="text" id="ime" placeholder="admin" />
-          <br />
-          <label for="lozinka">Lozinka</label>
-          <br />
-          <input type="password" id="lozinka" placeholder="" />
-          <br />
-          
-          <input type="checkbox" name="z[]" id="zapamti" />
-          <label for="zapamti">Zapamti uređaj</label>
+          <label class="label" for="ime">Korisničko ime</label>
+          <input type="text" id="ime" />
+          <label class="label" for="lozinka">Lozinka</label>
+          <input type="password" id="lozinka" />
+          <div class="checkbox">
+            <input type="checkbox" name="zapamti" id="zapamti" />
+            <label class="checkbox" for="zapamti">Zapamti uređaj</label>
+          </div>
+          <button>Prijavi se</button>
         </fieldset>
       </form>
     </div>
+    <table>
+      <caption>
+        Nedavne aktivnosti prijave
+      </caption>
+      <colgroup>
+        <col style="width: 35%" />
+        <col style="width: 35%" />
+        <col style="width: 35%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>IP ADRESA</th>
+          <th>VRIJEME</th>
+          <th>STATUS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>192.168.1.15</td>
+          <td>12:45</td>
+          <td>Uspjeh</td>
+        </tr>
+        <tr>
+          <td>10.0.0.52</td>
+          <td>Jučer</td>
+          <td>Greška</td>
+        </tr>
+        <tr>
+          <td>88.102.x.x</td>
+          <td>01.12.</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Prikaz zadnja 3 pokušaja</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
