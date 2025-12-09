@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav h1 {
+    color: darkorange;
+    padding-left: 10%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 45%;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: right;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(19, 17, 17);
+    text-align: center;
+    padding: 10% 0%;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    color: white;
+    padding: 20px;
+}
+
+.btn {
+    background-color: darkorange;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
