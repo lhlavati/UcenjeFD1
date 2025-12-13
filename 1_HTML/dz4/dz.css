@@ -1,87 +1,138 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    background-color: rgb(31, 28, 28);
-    display: flex;
-    flex-flow: row wrap;
+  background-color: rgb(31, 28, 28);
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 nav h1 {
-    color: darkorange;
-    padding-left: 10%;
+  color: darkorange;
+  padding-left: 10%;
 }
 
 nav ul {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 45%;
-    gap: 30px;
-    list-style-type: none;
-    align-items: center;
-    justify-content: right;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 45%;
+  gap: 30px;
+  list-style-type: none;
+  align-items: center;
+  justify-content: right;
 }
 
 nav a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 header {
-    background-color: rgb(19, 17, 17);
-    text-align: center;
-    padding: 8% 0%;
+  background-color: rgb(19, 17, 17);
+  text-align: center;
+  padding: 8% 0%;
 }
 
 header h1 {
-    color: white;
-    margin: 0;
-    font-size: 40px;
+  color: white;
+  margin: 0;
+  font-size: 40px;
 }
 
 header p {
-    color: white;
-    padding: 20px;
+  color: white;
+  padding: 20px;
 }
 
 .btn {
-    background-color: darkorange;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-weight: bold;
+  background-color: darkorange;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .container {
-    text-align: center;
+  width: 95%;
+  margin: 2rem auto;
 }
 
-.container h3 {
-    font-size: 2rem;
-    margin: 2rem;
+.services {
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 2rem;
+  margin: 2rem;
 }
 
 .usluge {
-    width: 80%;
-    margin: 2rem auto;
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .usluga {
-    background-color: rgb(221, 221, 221);
-    display: 1 1 auto;
-    text-align: left;
-    border: 1rem;
-    padding: 1.5rem;
-    border-radius: 0.6rem;
-    border-inline-start: 5px solid goldenrod;
+  background-color: rgb(221, 221, 221);
+  display: 1 1 auto;
+  text-align: left;
+  border: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  border-inline-start: 5px solid goldenrod;
 }
 
 .usluga strong {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.about {
+  margin: 1rem auto;
+  padding: 2rem 0;
+}
+
+.columns {
+  columns: 2 auto;
+  column-gap: 2rem;
+  column-rule: 1px solid #ccc;
+  column-fill: balance;
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: left;
+  border-radius: 5px;
+}
+
+caption {
+  text-align: left;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #131111;
+}
+
+thead th {
+  background-color: #131111;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+tbody tr:nth-child(even){           
+    background-color: rgb(228, 228, 228);
 }
