@@ -55,3 +55,33 @@ header p {
     border-radius: 10px;
     font-weight: bold;
 }
+
+.container {
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.usluge {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.usluga {
+    background-color: rgb(221, 221, 221);
+    display: 1 1 auto;
+    text-align: left;
+    border: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    border-inline-start: 5px solid goldenrod;
+}
+
+.usluga strong {
+    font-size: 20px;
+}
