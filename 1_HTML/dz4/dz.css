@@ -136,3 +136,77 @@ td {
 tbody tr:nth-child(even){           
     background-color: rgb(228, 228, 228);
 }
+
+.query {
+  background-color: rgb(235, 235, 235);
+  margin: 10px auto;
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+fieldset{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    padding: 0.6rem 0;
+    text-align: left;
+}
+
+legend {
+  text-align: left;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[list="vrsta_radova"], textarea {
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}
+
+.checkbox {
+  text-align: left;
+  padding: 0.6rem 0;
+}
+
+.termin {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+meter {
+    width: 100%;
+    margin: 0.4rem auto;
+}
+
+.termin p {
+    font-size: 15px;
+}
+
+button {
+    font-weight: bold;
+    background-color: goldenrod;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+}

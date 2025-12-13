@@ -114,6 +114,53 @@
           </tr>
         </tfoot>
       </table>
+      <div class="query">
+        <h2>Pošaljite upit</h2>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>KONTAKT PODACI</legend>
+
+            <label for="ime">Ime i Prezime:</label>
+            <input type="text" id="ime" placeholder="Ivan Horvat" />
+
+            <label for="lozinka">Email adresa:</label>
+            <input type="text" id="email" placeholder="ivan@primjer.hr" />
+
+            <label for="izbor_radova">Vrsta radova:</label>
+            <input list="vrsta_radova" id="izbor_radova" name="izbor_radova" />
+            <datalist id="vrsta_radova">
+              <option value="Dijamantno bušenje"></option>
+              <option value="Rezanje betona"></option>
+              <option value="Obrada kamena"></option>
+            </datalist>
+
+            <label for="opis">Opis posla:</label>
+            <textarea id="opis" name="opis"></textarea>
+
+            <div class="checkbox">
+              <input type="checkbox" name="hitna" id="hitna" />
+              <label for="hitna">Hitna intervencija</label>
+            </div>
+          </fieldset>
+
+          <div class="termin">
+            <label for="termin">Fuel level:</label>
+
+            <meter
+              id="termin"
+              min="0"
+              max="100"
+              low="30"
+              high="60"
+              optimum="20"
+              value="80"
+            >
+            </meter>
+            <p>Trenutno imamo veliku popunjesto termina.</p>
+          </div>
+          <button>POŠALJI UPIT</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
