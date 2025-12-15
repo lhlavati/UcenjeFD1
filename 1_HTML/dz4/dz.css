@@ -201,7 +201,7 @@ meter {
     font-size: 15px;
 }
 
-button {
+.btn-upit {
     font-weight: bold;
     background-color: goldenrod;
     width: 50%;
@@ -209,4 +209,20 @@ button {
     border-radius: 10px;
     margin: 0 auto;
     border: none;
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+a {
+  color: goldenrod;
+}
+
+hr {
+  background-color: rgb(156, 156, 156);
+  margin: 2rem 0;
 }
