@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Domaća Zadaća</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    Hello World
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #8b0000">Tko pjeva zlo ne misli</h1>
+      <em style="color: #6e6e6e">Dnevnik malog Perice</em>
+    </header>
+    <hr style="border-color: #8b0000" />
+    <nav>
+      <ul>
+        <li><a href="#">Radnja</a></li>
+        <li><a href="#">Likovi</a></li>
+        <li><a href="#">Piši nam</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>O čemu se radi?</h2>
+      <div class="radnja">
+        <div class="tekst">
+          <p>
+            Radnja filma smještena je u <strong>Zagreb</strong> sredinom
+            tridesetih godina 20. stoljeća.
+          </p>
+          <p>
+            Sve se vrti oko obitelji <em>Šafranek</em> i njihovih bračnih zgoda
+            i nezgoda, začinjenih pjesmom i izletima u Maksimir.
+          </p>
+          <div class="quote">
+            <span>"Ljubim ruke, milostiva!"</span>
+          </div>
+        </div>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/d8UySKO-ltU?si=0JusZ4i3AVM5qI3i"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Glavni Likovi</h2>
+      <table>
+        <colgroup>
+          <col style="width: 25%" />
+          <col style="width: 25%" />
+          <col style="width: 50%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Ime</th>
+            <th>Uloga</th>
+            <th>Osobina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Franjo</td>
+            <td>Otac</td>
+            <td>Voli gemišt i politiku</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>Majka</td>
+            <td>Romantična duša</td>
+          </tr>
+          <tr>
+            <td>Perica</td>
+            <td>Sin</td>
+            <td>Promatrač</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Pošalji pismo u Gornji Grad</h2>
+      <form action="" method="get">
+        <label for="ime" id="ime">Tvoje ime: </label>
+        <input type="text" name="name" id="ime" placeholder="Npr. Mina" />
+        <label for="poruka" id="poruka">Poruka:</label>
+        <textarea type="text" name="poruka" id="poruka"></textarea>
+        <button>Pošalji golubom</button>
+      </form>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2025. Edunova</p>
+    </footer>
+  </body>
 </html>
