@@ -25,26 +25,124 @@
         <button>ZAPOČNI DANAS</button>
       </div>
     </header>
-    <section>
-        <h2>Što nudimo?</h2>
-        <hr>
-        <div class="program">
-            <div>
-                <h3>Osobni Trening</h3>
-                <p>Jedan na jedan rad s centrificiranim trenerom u teretani. Fokus na pravilno izvođenje vježbi i maksimalne rezultate.</p>
-            </div>
-            <div>
-                <h3>Plan Prehrane</h3>
-                <p>Personilizirani jelovnici prilagođeni tvojim ciljevima, bilo da želiš smršaviti ili dobiti mišićnu masu.</p>
-            </div>
-            <div>
-                <h3>Online Mentorstvo</h3>
-                <p>Treniraj bilo gdje i bilo kada uz našu aplikaciju, video upute i tjedne check-in konzultacije</p>
-            </div>
+    <section style="padding: 2rem">
+      <h2>Što nudimo?</h2>
+      <hr />
+      <div class="program">
+        <div>
+          <h3>Osobni Trening</h3>
+          <p>
+            Jedan na jedan rad s centrificiranim trenerom u teretani. Fokus na
+            pravilno izvođenje vježbi i maksimalne rezultate.
+          </p>
         </div>
+        <div>
+          <h3>Plan Prehrane</h3>
+          <p>
+            Personilizirani jelovnici prilagođeni tvojim ciljevima, bilo da
+            želiš smršaviti ili dobiti mišićnu masu.
+          </p>
+        </div>
+        <div>
+          <h3>Online Mentorstvo</h3>
+          <p>
+            Treniraj bilo gdje i bilo kada uz našu aplikaciju, video upute i
+            tjedne check-in konzultacije
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="paketi">
+      <h2>Paketi i Cijene</h2>
+      <hr />
+      <table>
+        <caption>
+          Mjesečni paketi usluga
+        </caption>
+        <colgroup>
+          <col style="width: 33%" />
+          <col style="width: 33%" />
+          <col style="width: 33%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>USLUGA</th>
+            <th>TRAJANJE</th>
+            <th>CIJENA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Start Paket</strong> (3 treninga tjedno)</td>
+            <td>1 Mjesec</td>
+            <td>150€</td>
+          </tr>
+          <tr>
+            <td><strong>Pro Paket</strong> (5 treninga tjedno + prehrana)</td>
+            <td>1 Mjesec</td>
+            <td>250€</td>
+          </tr>
+          <tr>
+            <td><strong>Online Coaching</strong></td>
+            <td>1 Mjesec</td>
+            <td>100€</td>
+          </tr>
+          <tr>
+            <td><strong>Plan Prehrane</strong> (Samo izrada)</td>
+            <td>Jednokratno</td>
+            <td>50€</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/p3HGS6iZEyg?si=kYMcdXeU7S0KFzrB"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </section>
     <section>
-        
+      <h2>Javi nam se</h2>
+      <hr />
+      <div class="kontakt">
+        <div class="info">
+          <em
+            ><h3>Fitnes Centar "Olimp"</h3>
+            <p>Ilica 212, 10000 Zagreb<br />Hrvatska</p>
+
+            <p>
+              Email: <span>info@fitnestener.hr</span><br />
+              Tel: +385 91 123 4567
+            </p>
+          </em>
+          <p>
+            Radno vrijeme:<br />
+            06:00 - 22:00
+          </p>
+        </div>
+
+        <form>
+            <label class="ime" for="ime">Ime i Prezime:</label>
+            <input type="text" placeholder="Vaše ime" id="ime"/>
+            <label class="email" for="email">Email adresa:</label>
+            <input id="email" type="email" placeholder="primjer@mail.com" />
+            <label>Vaš plan/cilj:</label>
+            <select>
+              <option>Mršavljenje</option>
+              <option>Dobivanje mase</option>
+              <option>Kondicija</option>
+            </select>
+            <label for="poruka">Poruka:</label>
+            <textarea id="poruka" placeholder="Opišite svoje trenutno stanje..."></textarea>
+          <button>POŠALJI UPIT</button>
+        </form>
+      </div>
     </section>
-</body>
+  </body>
 </html>
