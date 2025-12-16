@@ -109,7 +109,7 @@ hr {
 }
 
 table {
-  width: 70%;
+  width: 50%;
   margin: 2rem auto;
   border-collapse: collapse;
   text-align: center;
@@ -148,7 +148,6 @@ td {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   padding: 2rem 0;
   gap: 50px;
   width: 80%;
@@ -211,4 +210,17 @@ form button {
   border-radius: 30px;
   font-weight: 700;
   border: none;
+}
+
+footer {
+  background-color: black;
+  color: lightgray;
+  text-align: center;
+  border-top: 2px solid #cbff00;
+  padding: 1.6rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightgray;
 }
