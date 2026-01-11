@@ -157,11 +157,10 @@ section h2::after {
 #video video {
     width: 100%;
     max-width: 700px;
-    height: 400px;
+    height: 395px;
     background-color: #0F172A;
     border-radius: 4px;
     border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 #contact > div {
