@@ -7,6 +7,124 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <span>🍽️ DOMAĆI KUTAK</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Meni</a>
+                <a href="#">Info</a>
+                <a href="#">Rezervacija</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h1>Okusi tradicije na tanjuru</h1>
+            <p>Svježe namirnice, bakini recepti i ugodna atmosfera.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Današnji Specijaliteti</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="https://placehold.co/300x200" class="card-img" alt="Slika">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Lovački Gulaš</h3>
+                            <span class="price">12.00 €</span>
+                        </div>
+                        <p>S domaćim njokima i čašom crnog vina.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/300x200" class="card-img" alt="Slika">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Piletina u umaku</h3>
+                            <span class="price">10.50 €</span>
+                        </div>
+                        <p>Grill pileća prsa s umakom od gljiva i rižom.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/300x200" class="card-img" alt="Slika">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Vege Tanjur</h3>
+                            <span class="price">8.00 €</span>
+                        </div>
+                        <p>Sezonsko povrće sa žara, humus i tostirani kruh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="nutrition-wrapper">
+                <h2 class="section-title">Nutritivne Vrijednosti</h2>
+                <p class="nutrition-intro">Brinemo o vašem zdravlju. Pogledajte detalje za današnja jela.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jelo</th>
+                            <th>Kalorije (kcal)</th>
+                            <th>Proteini (g)</th>
+                            <th>Alergeni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lovački Gulaš</td>
+                            <td>650</td>
+                            <td>35</td>
+                            <td>Gluten, Jaja</td>
+                        </tr>
+                        <tr>
+                            <td>Piletina u umaku</td>
+                            <td>520</td>
+                            <td>40</td>
+                            <td>Laktoza</td>
+                        </tr>
+                        <tr>
+                            <td>Vege Tanjur</td>
+                            <td>380</td>
+                            <td>15</td>
+                            <td>Sezam</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="reservation-box">
+            <h2 class="section-title">Rezervirajte Stol</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Vaše Ime:</label>
+                    <input type="text" id="name" placeholder="Ivan Horvat">
+                </div>
+                <div class="form-group">
+                    <label for="people">Broj osoba:</label>
+                    <select id="people">
+                        <option>2 Osobe</option>
+                        <option>3 Osobe</option>
+                        <option>4 Osobe</option>
+                        <option>Više od 4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="note">Napomena:</label>
+                    <textarea id="note" placeholder="Npr. rođendanska proslava..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Potvrdi Rezervaciju</button>
+            </form>
+        </section>
+
+        <div class="footer-spacer"></div>
+    </main>
 </body>
 </html>
