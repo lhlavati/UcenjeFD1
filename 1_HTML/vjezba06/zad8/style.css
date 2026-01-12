@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 900px;
+}
+
+header, article, aside, footer {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    padding: 60px;
+}
+
+header small {
+    color: #3b82f6;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+    color: #1e293b;
+    line-height: 1.1;
+}
+
+header h2 {
+    font-size: 3.5rem;
+    color: #3b82f6;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 600px;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 30px;
+}
+
+article {
+    flex: 2;
+    padding: 40px;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 25px;
+}
+
+blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin: 40px 0;
+}
+
+aside {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 30px;
+}
+
+aside h3 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+aside section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+aside h4 {
+    color: #3b82f6;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
