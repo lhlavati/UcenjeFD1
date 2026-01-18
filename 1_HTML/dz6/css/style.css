@@ -78,7 +78,27 @@ main p {
 
 .grid {
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
     "a b c";
+    margin-top: 4rem;
+}
+
+.a {grid-area: a;}
+.b {grid-area: b;}
+.c {grid-area: c;}
+
+.card {
+    margin: 0 auto;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+img {
+    width: 370px;
+    height: 250px;
+    border-radius: 4px;
 }
 
