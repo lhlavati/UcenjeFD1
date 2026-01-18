@@ -59,6 +59,10 @@ nav ul li a {
     color: white;
 }
 
+nav ul li:hover {
+    background-color: #148572;
+}
+
 nav ul li.oznacen {
     background-color: #00BF9F;
 }
@@ -96,9 +100,19 @@ main p {
     padding: 10px 0;
 }
 
-img {
+main img {
     width: 370px;
     height: 250px;
     border-radius: 4px;
+}
+
+footer {
+    background-color: #2C3F51;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
