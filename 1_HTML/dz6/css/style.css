@@ -14,7 +14,6 @@ body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
     color: white;
 }
 
@@ -23,7 +22,6 @@ body {
   width: 10px;
   height: 10px;
   background: linear-gradient(white, white);
-  /* Workaround for Chromium's selective color inversion */
   border-radius: 50%;
   filter: drop-shadow(0 0 10px white);
 }
@@ -67,16 +65,27 @@ nav ul li.oznacen {
     background-color: #00BF9F;
 }
 
-main{
-    margin: 2rem;
+main {
+    min-height: calc(100vh - 229px);
+}
+
+footer {
+    background-color: #2C3F51;
+    text-align: center;
+    height: 75px;
+    padding-top: 30px;
+}
+
+.pocetna{
+    margin: 2rem 0;
     text-align: center;
 }
 
-main h2 {
+.pocetna h2 {
     padding: 10px;
 }
 
-main p {
+.pocetna p {
     padding: 6px;
 }
 
@@ -85,6 +94,8 @@ main p {
     grid-template-areas: 
     "a b c";
     margin-top: 4rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .a {grid-area: a;}
@@ -98,21 +109,48 @@ main p {
     height: 300px;
     border-radius: 4px;
     padding: 10px 0;
+    color: black;
 }
 
-main img {
+.pocetna img {
     width: 370px;
     height: 250px;
     border-radius: 4px;
 }
 
-footer {
-    background-color: #2C3F51;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.prica {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: 2rem auto;
+    width: 90%;
     text-align: center;
 }
 
+.prica h2 {
+    color: #00BF9F;
+    padding: 2rem;
+}
+
+.prica p {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 1.5rem;
+}
+
+.zaposlenici {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.zaposlenici img {
+    border-radius: 50%;
+    border: 5px solid #00BF9F;
+    width: 150px;
+    height: 150px;
+    margin: 0.8rem;
+}
