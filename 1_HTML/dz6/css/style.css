@@ -301,3 +301,30 @@ tbody tr td button{
     text-decoration-color: #00BF9F;
     text-decoration-thickness: 2px;
 }
+
+
+
+
+
+.blog {
+    background-color: #1D232B;
+    border-radius: 8px;
+    padding: 30px;
+    border-left: 5px solid #00BF9F;
+    line-height: 1.6;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.blog h2 {
+    color: #00BF9F;
+}
+
+.blog p{
+    padding-bottom: 25px;
+}
+
+.blog hr {
+    border-color: gray;
+    margin-bottom: 15px;
+}
