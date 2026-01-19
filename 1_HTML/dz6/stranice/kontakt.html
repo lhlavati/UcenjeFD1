@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kontaktirajte Nas</h1>
+      <p>Pošaljite nam detaljan upit i javit ćemo vam se u roku od 24 sata.</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../pocetna.html">Početna</a></li>
+        <li><a href="onama.html">O nama</a></li>
+        <li><a href="usluge.html">Usluge</a></li>
+        <li><a href="projekti.html">Projekti</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li class="oznacen"><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="kontakt">
+        <form action="#">
+          <div class="form-red">
+            <div class="form-grupa">
+              <label for="ime">Ime i prezime</label>
+              <input type="text" id="ime" placeholder="Vaše ime..." />
+            </div>
+            <div class="form-grupa">
+              <label for="email">Email adresa</label>
+              <input type="email" id="email" placeholder="email@primjer.com" />
+            </div>
+          </div>
+          <div class="form-red">
+            <div class="form-grupa">
+              <label for="usluga">Zanima me usluga:</label>
+              <select id="usluga">
+                <option value="frontend">Frontend Razvoj</option>
+                <option value="backend">Backend Razvoj</option>
+                <option value="dizajn">UI/UX Dizajn</option>
+              </select>
+            </div>
+            <div class="form-grupa">
+              <label for="rok">Željeni rok završetka:</label>
+              <input type="date" id="rok" />
+            </div>
+          </div>
+
+          <div class="form-grupa">
+            <label>Planirani budžet:<span>1500 €</span></label>
+            <input
+              type="range"
+              min="500"
+              max="5000"
+              value="1500"
+              class="slider"
+              id="slider"
+            />
+          </div>
+
+          <div class="form-grupa">
+            <label for="opis">Opis projekta</label>
+            <textarea
+              id="opis"
+              rows="5"
+              placeholder="Recite nam nešto više o vašim idejama..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">POŠALJI UPIT</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Edunova, sva prava pridržana</p>
+    </footer>
+  </body>
 </html>
