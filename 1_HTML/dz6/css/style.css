@@ -66,7 +66,7 @@ nav ul li.oznacen {
 }
 
 main {
-    min-height: calc(100vh - 229px);
+    min-height: calc(100vh - 313px);
 }
 
 footer {
@@ -153,4 +153,67 @@ footer {
     width: 150px;
     height: 150px;
     margin: 0.8rem;
+}
+
+.usluge {
+    padding: 2rem;
+}
+
+.usluge h2 {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.cjenik{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #1a1e256c;
+  padding: 40px 0px;
+  border-radius: 10px;
+}
+
+table{
+  width: 90%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead tr{
+  background-color: #1CBB9D;
+  color: black;
+  text-transform: uppercase;
+}
+
+thead tr th{
+  padding: 20px;
+  text-align: left;
+}
+
+th, td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+tbody tr{
+  border-bottom: 1px solid rgb(71, 71, 71)
+}
+
+tbody tr td{
+  padding: 20px;
+}
+
+.boja {
+    color: #1CBB9D; 
+    font-weight: bold;
+}
+
+tbody tr td button{
+  border: none;
+  color: white;
+  background-color: #1CBB9D;
+  padding: 7px 15px;
+  border-radius: 0.2rem;
+  width: 70%;
 }
