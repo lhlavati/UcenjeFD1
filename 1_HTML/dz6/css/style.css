@@ -328,3 +328,47 @@ tbody tr td button{
     border-color: gray;
     margin-bottom: 15px;
 }
+
+
+
+
+
+.galerija {
+    margin: 2rem auto;
+    width: 50%;
+    background-color: #242D3B;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.galerija p {
+    padding: 20px;
+    color: lightgray;
+}
+
+.galerija img {
+    border-radius: 15px;
+    width: 95%;
+    border: 1px solid #00BF9F;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.btns button {
+    background-color: #00BF9F;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.galerija h2 {
+    color: #00BF9F;
+    padding: 15px;
+}
