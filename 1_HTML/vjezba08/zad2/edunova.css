@@ -1,0 +1,10 @@
+.neural-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: radial-gradient(circle at 15% 85%, rgb(167 106 211 / 70%) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(139, 37, 99, 0.8) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgba(128, 0, 128, 0.6) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.4) 0%, transparent 50%), linear-gradient(135deg, #bf4c4c 0%, #9e31ff 50%, #c31717 100%);
+    animation: backgroundPulse 14s ease-in-out infinite;
+}
