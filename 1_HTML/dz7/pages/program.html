@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="hr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <!-- Početak izbornika -->
+          <div
+            class="title-bar"
+            data-responsive-toggle="example-menu"
+            data-hide-for="medium"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="example-menu"
+            ></button>
+            <div class="title-bar-title"></div>
+          </div>
+          <div class="top-bar" id="example-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">FPV</li>
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="program.html">Kurikulum</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Kraj izbornika -->
+        </div>
+      </div>
+      <div class="grid-y grid-padding-y">
+        <div class="cell">
+          <ul class="accordion" data-accordion>
+            <li class="accordion-item is-active" data-accordion-item>
+              <a href="#" class="accordion-title">Vrste Dronova</a>
+              <div class="accordion-content" data-tab-content>
+                <p>
+                  <strong>Trkački FPV dronovi:</strong> Dizajnirani za brzinu i
+                  agilnost, često korišteni za pokazivanje vještina upravljanja.
+                  <strong>Edukacijski/Freestyle dronovi:</strong> Manji i izdržljiviji dronovi
+                  pogodni za početnike i demonstracije u školama.
+                </p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Simulatori</a>
+              <div class="accordion-content" data-tab-content>
+                <p><strong>FPV Simulator</strong> je računalna igra s naprednom fizikom koja vjerno prenosi osjećaj letenja drona. Za razliku od običnih igara, ovdje koristiš pravi radio kontroler (stanicu) koju spojiš na računalo putem USB-a.</p>
+                <p><strong>Najpopularniji simulatori na tržištu:</strong> Liftoff, VelociDrone, Uncrashed, TRYP FPV.</p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Elektronika</a>
+              <div class="accordion-content" data-tab-content>
+                <p><strong>Projekt FAUST</strong> koristi elektroniku kako bi učenike naučio:
+                </p>
+                <ul class="no-bullet">
+                    <li><strong>1. Sastavljanju:</strong> Kako povezati motore na ESC i FC.</li>
+                    <li><strong>2. Lemljenju:</strong> Osnovna vještina u FPV-u - popravak i spajanje sitnih žica.</li>
+                    <li><strong>3. Programiranju:</strong> Korištenje softvera poput Betaflight-a za konfiguraciju drona.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="hr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <!-- Početak izbornika -->
+          <div
+            class="title-bar"
+            data-responsive-toggle="example-menu"
+            data-hide-for="medium"
+          >
+            <button
+              class="menu-icon"
+              type="button"
+              data-toggle="example-menu"
+            ></button>
+            <div class="title-bar-title"></div>
+          </div>
+          <div class="top-bar" id="example-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">FPV</li>
+                <li><a href="#">Početna</a></li>
+                <li><a href="pages/program.html">Kurikulum</a></li>
+                <li><a href="pages/kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Kraj izbornika -->
+        </div>
+        <div class="cell">
+          <!-- Početak Thumbnail -->
+          <img class="logo" src="img/logo.jpg" alt="Photo of Uranus." />
+          <!-- Kraj Thumbnail -->
+        </div>
+        <div class="cell saznajte">
+          <!-- Početak Reveal -->
+          <p>
+            <button class="button large" data-open="exampleModal1">
+              Saznajte više →
+            </button>
+          </p>
+          <div class="reveal" id="exampleModal1" data-reveal>
+            <p class="h2">Dobrodošli na web stranicu projekta FAUST!</p>
+            <p class="lead">Ukratko:</p>
+            <p>
+              Cilj projekta FAUST je jačanje kapaciteta Udruge Mladi robotičari
+              u promociji STEM-a među djecom i učenicima kroz suradnju s Odjelom
+              za informacijske znanosti FFOS, CARNET-om te više
+              odgojnoobrazovnih institucija koje djeluju na području
+              Splitsko-dalmatinske županije.
+            </p>
+            <button
+              class="close-button"
+              data-close
+              aria-label="Close modal"
+              type="button"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- Kraj Reveal -->
+        </div>
+        <!-- Početak Kartica -->
+        <div class="cell medium-6 large-4">
+          <div class="card">
+            <img src="img/tehnickevjestine.jpg" />
+            <div class="card-section">
+              <p>Tehničke vještine</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="card">
+            <img src="img/kognitivne.jpg" />
+            <div class="card-section">
+              <p>Kognitivne sposobnosti</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="card">
+            <img src="img/stem.jpg" />
+            <div class="card-section">
+              <p>STEM priprema</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kraj kartica -->
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
