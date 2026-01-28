@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Hello World</title>
+    <style>
+        .nojs{
+            background-color: red;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="ispis">
+
+    </p>
+
+    <button onclick="alert('Hello world 7')">
+        Klikni me
+    </button>
+
+    <div onmouseover="this.style.backgroundColor='#f0f'"
+    onmouseleave="this.style.backgroundColor='white'">Dodi misem iznad</div>
+
+    <input type="text" name="" id=""
+    style="font-size: 3rem;"
+    onkeyup="this.value = this.value.toUpperCase()">
+
+    <noscript>
+        <div class="nojs">
+            Vaš preglednik ne podržava JavaScript!
+        </div>
+    </noscript>
+    <script>
+        document.write('Hello world 1');
+        console.log("Hello world 2");
+        document.getElementById('ispis').innerText='Hello world 4';
+        document.getElementById('ispis').style.color='red';
+    </script>
+    <script src="skripta.js"></script>
+</body>
+</html>
