@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPV Akademija</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body data-bs-theme="auto">
+    <div class="container">
+      <div class="row gx-2 gy-2 text-center">
+        <div class="col-12">
+          <!-- Početak izbornik -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FPV</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Početna</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="../pages/program.html"
+                      >Kurikulum</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/kontakt.html">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-4">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Vrste Dronova
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>Trkački FPV dronovi:</strong> Dizajnirani za brzinu i
+                  agilnost, često korišteni za pokazivanje vještina upravljanja.
+                  <br />
+                  <strong>Edukacijski/Freestyle dronovi:</strong> Manji i
+                  izdržljiviji dronovi pogodni za početnike i demonstracije u
+                  školama.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Simulatori
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>FPV Simulator</strong> je računalna igra s naprednom
+                  fizikom koja vjerno prenosi osjećaj letenja drona. Za razliku
+                  od običnih igara, ovdje koristiš pravi radio kontroler
+                  (stanicu) koju spojiš na računalo putem USB-a.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Elektronika
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong>Projekt FAUST</strong> koristi elektroniku kako bi
+                    učenike naučio:
+                  </p>
+                  <ul class="list-unstyled">
+                    <li>
+                      <strong>1. Sastavljanju:</strong> Kako povezati motore na
+                      ESC i FC.
+                    </li>
+                    <li>
+                      <strong>2. Lemljenju:</strong> Osnovna vještina u FPV-u -
+                      popravak i spajanje sitnih žica.
+                    </li>
+                    <li>
+                      <strong>3. Programiranju:</strong> Korištenje softvera
+                      poput Betaflight-a za konfiguraciju drona.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="alert alert-warning" role="alert">
+            <h4><strong>Potrebna oprema za tečaj:</strong></h4>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">Baterije</li>
+            <li class="list-group-item">Daljinski upravljač</li>
+            <li class="list-group-item">Filteri</li>
+            <li class="list-group-item">Propeleri</li>
+            <li class="list-group-item">Punjači</li>
+            <li class="list-group-item">Punjači</li>
+          </ul>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <div class="alert alert-info" role="alert">
+            <h4><strong>Opis predavača:</strong></h4>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary mb-4"
+            data-bs-toggle="modal"
+            data-bs-target="#predavac1"
+          >
+            Predavač 1
+          </button>
+          <button
+            type="button"
+            class="btn btn-info mb-4"
+            data-bs-toggle="modal"
+            data-bs-target="#predavac2"
+          >
+            Predavač 2
+          </button>
+          <button
+            type="button"
+            class="btn btn-success mb-4"
+            data-bs-toggle="modal"
+            data-bs-target="#predavac3"
+          >
+            Predavač 3
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger mb-4"
+            data-bs-toggle="modal"
+            data-bs-target="#predavac4"
+          >
+            Predavač 4
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="predavac1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Predavač 1
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Detaljan opis predavača 1.</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="predavac2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Predavač 2
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Detaljan opis predavača 2.</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="predavac3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Predavač 3
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Detaljan opis predavača 3.</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="predavac4"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Predavač 4
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Detaljan opis predavača 4.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer fixed-bottom bg-dark">
+          <div class="container text-center p-4">
+            <span class="text-white">&copy; 2026 Edunova</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
