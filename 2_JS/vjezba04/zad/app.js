@@ -198,6 +198,80 @@ document.getElementById("izvedi").addEventListener("click", () => {
     }
   }
 
+  //napravit jednostavnije (skužit kako)
+  if (zadatak === "9") {
+    const x = Number(a);
+    const y = Number(b);
+    const z = Number(c);
+    const q = Number(d);
+
+    // isprobaj Number.isInteger(x)
+    if(!x || !y || !z || !q) {
+      rezultat.innerHTML = 'Jedno od unosnih polja nije broj';
+      return;
+    }
+
+    if(x > y && z > q){
+      rezultat.innerHTML = x + z;
+    } else if (x > y && q > z){
+      rezultat.innerHTML = x + q;
+    } else if (y > x && z > q) {
+      rezultat.innerHTML = y + z;
+    } else if (y > x && q > z) {
+      rezultat.innerHTML = y + q;
+    }
+
+    return;
+  }
+
+  //10. Za upisani broj u polju D ispiši 10 puta veći broj
+  if(zadatak === "10"){
+    const x = Number(d);
+
+    rezultat.innerHTML = (!x || x === 0) ? "Vrijednost u polju D nije broj ili je 0!" : x * 10;    
+    
+    return;
+  }
+
+  //11. Za uneseno ime grada u polju B ispiši da li je središte edunove ili ne
+  if(zadatak === "11"){
+    if(!b){
+      rezultat.innerHTML = 'Obavezan unos grada pod vrijednosti B!'
+      return;
+    }
+    
+    if(b.toLowerCase() === 'osijek'){
+      rezultat.innerHTML = `${b} je središte Edunove`;
+    } else {
+      rezultat.innerHTML = `${b} nije središte Edunove`;
+    }
+    return;
+  }
+
+  //12. Za upisane pojmove u polju A i B ispiši ih jedno pokraj drugog
+  if(zadatak === "12"){
+    if(!a || !b){
+      rezultat.innerHTML = 'Obavezan unos pojmova u polja A i B!'
+      return;
+    }
+    rezultat.innerHTML = a + " " + b;
+    return;
+  }
+  
+  //13. Ispiši umnožak brojeva A i D
+  if(zadatak === "13"){
+    const x = Number(a);
+    const y = Number(d);
+    
+    if(Number.isInteger(x) && Number.isInteger(y)){
+      rezultat.innerHTML = x * y;
+    } else {
+      rezultat.innerHTML = "Molim upišite brojeve u polja A i D";
+    }
+
+    return;
+  }
+
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 });
