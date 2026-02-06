@@ -80,7 +80,55 @@ document.getElementById("izvedi").addEventListener("click", () => {
       }
       // kraj rješavanje 3. zadatak
       break;
+    case "4":
+      const y = parseFloat(a);
+      if(!y){
+        rezultat.innerHTML = 'Niste unjeli dobru vrijednost'
+        return;
+      }
+      const cijeliBroj = parseInt(a);
+      rezultat.innerHTML = ((y - cijeliBroj) * 100);
 
+      break;
+    case "5":
+      const z = Number(a);
+      if(!z){
+        rezultat.innerHTML = 'Niste unijeli broj';
+      return;
+      }
+      if(z % 2 === 0){
+        rezultat.innerHTML = 'Paran'
+      } else {
+        rezultat.innerHTML = 'Neparan'
+      }
+      break;
+    case "6":
+      if(!a){
+        rezultat.innerHTML = "Polje mora biti ispunjeno";
+        return;
+      }
+
+      switch (a.toLowerCase) {
+        case 'jabuka':
+        case 'kruska':
+        case 'banana':
+          rezultat.innerHTML = 'Voće je!';
+          break;
+        default:
+          rezultat.innerHTML = 'Nije na našoj listi voća'
+          break;
+      }
+
+      break;
+    case "7":
+      if(!a){
+        rezultat.innerHTML = "Polje mora biti ispunjeno"
+      }
+
+      rezultat.innerHTML = a.length
+
+      break;
+      
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
@@ -106,3 +154,5 @@ document.getElementById("izvedi").addEventListener("click", () => {
 // 80–89 → "Vrlo dobar"
 // 90–100 → "Odličan"
 // Napomena: koristi switch(true).
+
+// 4. Za uneseni decimalni broj ispiši samo decimalni dio
