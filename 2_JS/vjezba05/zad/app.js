@@ -38,7 +38,7 @@ document.getElementById("izvedi").addEventListener("click", () => {
       } else if (a.toUpperCase() == "D" || a.toUpperCase() == "F") {
         rezultat.innerHTML = "Nije položio";
       } else {
-        rezultat.innerHTML = "Molim upisati jedno slovo<br> (A, B, C, D ili F)";
+        rezultat.innerHTML = "Molim upisati jednu ocjenu<br> (A, B, C, D ili F)";
       }
       // kraj rješavanje 2. zadatak
       break;
