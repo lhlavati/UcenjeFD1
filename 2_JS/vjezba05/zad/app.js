@@ -8,17 +8,56 @@ document.getElementById('izvedi').addEventListener('click', () => {
   switch (zadatak) {
     case '1':
       // rješavanje 1. zadatak
-
+      if(!a) {
+        rezultat.innerHTML = 'Polje ne smije biti prazno!';
+        return;
+      }
+      if(a.toLowerCase() == 'start'){
+        rezultat.innerHTML = 'Start programa'
+      } else if(a.toLowerCase() == 'stop') {
+        rezultat.innerHTML = 'Stop programa'
+      } else if(a.toLowerCase() == 'pauza'){
+        rezultat.innerHTML = 'Pauza programa'
+      } else {
+        rezultat.innerHTML = 'Molim unesite start, stop, pauza';
+      }
       // kraj rješavanje 1. zadatak
     break;
     case '2':
       // rješavanje 2. zadatak
+      if(!a) {
+        rezultat.innerHTML = 'Polje ne smije biti prazno!'
+        return;
+      }
 
+      if(a.toUpperCase() == 'A' || a.toUpperCase() == 'B' || a.toUpperCase() == 'C') {
+        rezultat.innerHTML = 'Položio';
+      } else if (a.toUpperCase() == 'D' || a.toUpperCase() == 'F') {
+        rezultat.innerHTML = 'Nije položio';
+      } else {
+        rezultat.innerHTML = 'Molim upisati jedno slovo<br> (A, B, C, D ili F)';
+      }
       // kraj rješavanje 2. zadatak
     break;
     case '3':
       // rješavanje 3. zadatak
-
+      const x = Number(a);
+      if(!Number.isInteger(x)){
+        rezultat.innerHTML = 'Molim upisati broj od 0 - 100';
+      }
+      if(x >= 0 && x < 50){
+        rezultat.innerHTML = 'Nedovoljan';
+      } else if(x >= 50  && x < 65){
+        rezultat.innerHTML = 'Dovoljan';
+      } else if(x >= 65  && x < 80){
+        rezultat.innerHTML = 'Dobar';
+      } else if(x >= 80  && x < 90){
+        rezultat.innerHTML = 'Vrlo dobar';
+      } else if(x >= 90  && x < 101){
+        rezultat.innerHTML = 'Odličan';
+      } else {
+        rezultat.innerHTML = 'Molim upisati broj od 0 - 100';
+      }
       // kraj rješavanje 3. zadatak
     break;
 
