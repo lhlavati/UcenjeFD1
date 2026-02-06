@@ -11,14 +11,19 @@ document.getElementById("izvedi").addEventListener("click", () => {
         rezultat.innerHTML = "Polje ne smije biti prazno!";
         return;
       }
-      if (a.toLowerCase() == "start") {
-        rezultat.innerHTML = "Start programa";
-      } else if (a.toLowerCase() == "stop") {
-        rezultat.innerHTML = "Stop programa";
-      } else if (a.toLowerCase() == "pauza") {
-        rezultat.innerHTML = "Pauza programa";
-      } else {
-        rezultat.innerHTML = "Molim unesite start, stop, pauza";
+      switch(a.toLowerCase()){
+        case "start":
+          rezultat.innerHTML = "Start programa";
+          break;
+        case "stop":
+          rezultat.innerHTML = "Stop programa";
+          break;
+        case "pause":
+          rezultat.innerHTML = "Pauza programa"
+          break;
+        default:
+          rezultat.innerHTML = "Molim unesite start, stop ili pauza"
+          break;
       }
       // kraj rješavanje 1. zadatak
       break;
@@ -29,16 +34,19 @@ document.getElementById("izvedi").addEventListener("click", () => {
         return;
       }
 
-      if (
-        a.toUpperCase() == "A" ||
-        a.toUpperCase() == "B" ||
-        a.toUpperCase() == "C"
-      ) {
-        rezultat.innerHTML = "Položio";
-      } else if (a.toUpperCase() == "D" || a.toUpperCase() == "F") {
-        rezultat.innerHTML = "Nije položio";
-      } else {
-        rezultat.innerHTML = "Molim upisati jednu ocjenu<br> (A, B, C, D ili F)";
+      switch(a.toUpperCase()){
+        case "A":
+        case "B":
+        case "C":
+          rezultat.innerHTML = "Položio";
+          break;
+        case "D":
+        case "F":
+          rezultat.innerHTML = "Nije položio";
+          break;
+        default:
+          rezultat.innerHTML = "Molim upisati jednu ocjenu<br> (A, B, C, D ili F)";
+          break;
       }
       // kraj rješavanje 2. zadatak
       break;
@@ -70,21 +78,6 @@ document.getElementById("izvedi").addEventListener("click", () => {
           rezultat.innerHTML = 'Molim upisati broj od 0 - 100';
           break;
       }
-
-      // sa IF/ELSE
-      // if(x >= 0 && x < 50){
-      //   rezultat.innerHTML = 'Nedovoljan';
-      // } else if(x >= 50  && x < 65){
-      //   rezultat.innerHTML = 'Dovoljan';
-      // } else if(x >= 65  && x < 80){
-      //   rezultat.innerHTML = 'Dobar';
-      // } else if(x >= 80  && x < 90){
-      //   rezultat.innerHTML = 'Vrlo dobar';
-      // } else if(x >= 90  && x < 101){
-      //   rezultat.innerHTML = 'Odličan';
-      // } else {
-      //   rezultat.innerHTML = 'Molim upisati broj od 0 - 100';
-      // }
       // kraj rješavanje 3. zadatak
       break;
 
