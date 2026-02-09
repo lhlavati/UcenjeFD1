@@ -59,8 +59,11 @@ body {
 
 #rezultat {
     font-size: 60px;
+    margin: 0 auto;
+    width: 80%;
     font-weight: bold;
     padding: 2rem;
+    word-wrap: break-word
 }
 
 button {
