@@ -74,11 +74,7 @@ document.getElementById("izvedi").addEventListener("click", () => {
       }
 
       if (typeof a === "string" && a.length < 3) {
-        console.log(a.length);
-        console.log(arr);
         arr = [...arr, "X"];
-        console.log(arr);
-
         rezultat.innerHTML = arr;
       } else {
         arr = ["Y", ...arr];
@@ -87,6 +83,39 @@ document.getElementById("izvedi").addEventListener("click", () => {
 
       return;
     case "5":
+      arr = [a, 123, "zadatak5", true, null, undefined, Symbol];
+      x = Number(a);
+
+      if(a === ""){
+        arr[0] = undefined;
+      } else if(!isNaN(x)){
+        arr[0] = Number(x);
+      } else if(a.toLowerCase() === "true"){
+        arr[0] = true;
+      } else if(a.toLowerCase() === "false"){
+        arr[0] = false;
+      } else {
+        arr[0] = a;
+      }
+
+      switch (typeof arr[0]) {
+            case "string":
+                rezultat.innerHTML = `${arr[0]} je string.`;
+                break;
+            case "number":
+                rezultat.innerHTML = `${arr[0]} je broj.`;
+                break;
+            case "boolean":
+                rezultat.innerHTML = `${arr[0]} je boolean.`;
+                break;
+            case "undefined":
+                rezultat.innerHTML = `a je undefined.`;
+                break;
+            default:
+                rezultat.innerHTML = "Greška";
+                break;
+        }
+
       return;
     case "6":
       return;
