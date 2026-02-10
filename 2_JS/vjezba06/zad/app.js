@@ -112,7 +112,7 @@ document.getElementById("izvedi").addEventListener("click", () => {
           rezultat.innerHTML = `a je undefined.`;
           break;
         default:
-          rezultat.innerHTML = "Greška";
+          rezultat.innerHTML = "Pogrešan tip";
           break;
       }
 
@@ -140,8 +140,8 @@ document.getElementById("izvedi").addEventListener("click", () => {
         rezultat.innerHTML = "Polja ne mogu biti prazna!";
         return;
       }
-      arr = [a, ,b];
-      rezultat.innerHTML = arr[1];
+      arr = [a, , b];
+      rezultat.innerHTML = `Array: ${arr} <br>arr[1]: ${arr[1]}`;
       return;
     case "9":
       if (!a || !b) {
@@ -156,17 +156,17 @@ document.getElementById("izvedi").addEventListener("click", () => {
       x = Number(b);
       switch (true) {
         case a === "" || b === "":
-            arr = [];
-            break;
+          arr = [];
+          break;
         case a === b:
-            arr = [a];
-            break;
+          arr = [a];
+          break;
         case !isNaN(x) && x === 2:
-            arr = [a, b];
-            break;
+          arr = [a, b];
+          break;
         default:
-            arr = [a, b, "x"];
-            break;
+          arr = [a, b, "x"];
+          break;
       }
       rezultat.innerHTML = "Array: " + arr;
       return;
