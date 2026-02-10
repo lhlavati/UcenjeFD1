@@ -128,7 +128,21 @@ document.getElementById("izvedi").addEventListener("click", () => {
       rezultat.innerHTML = a.length
 
       break;
-      
+    case "8":
+      var broj = Number(a);
+      var arr = [];
+
+      if(!a){
+        rezultat.innerHTML = "Molim unesite broj !";
+        return;
+      }
+
+      for(let i = 1; i <= broj; i++){
+        arr[i-1] = i;
+      }
+
+      rezultat.innerHTML = arr;
+      break;
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
