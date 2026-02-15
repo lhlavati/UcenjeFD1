@@ -178,11 +178,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
       let b7 = Number(b);
       let brojevi = '';
 
-      if(!a7 || !b7){
-        rezultat.innerHTML = "Polja ne mogu biti prazna!";
-        return;
-      }
-
       if(isNaN(a7) || isNaN(b7)){
         rezultat.innerHTML = "Molim upišite broj u polja A i B!";
         return;
