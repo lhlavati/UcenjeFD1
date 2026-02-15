@@ -73,8 +73,8 @@ document.getElementById('izvedi').addEventListener('click', () => {
     case '3':
       // rješavanje 3. zadatak
       const b3 = Number(b);
-      if(isNaN(b3)){
-        rezultat.innerHTML = "Molim upišite broj!"
+      if(isNaN(b3) || b === ''){
+        rezultat.innerHTML = "Molim upišite broj u polje B!"
         return;
       }
 
@@ -88,10 +88,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
       for(let i = 0; i < strB.length; i++){
         suma += (strB[i] ** 3);
-      }
-
-      if(b3 < 10){
-        rezultat.innerHTML = "Broj je Armstrongov!"
       }
 
       rezultat.innerHTML = suma == b3 ? "Broj je Armstrongov!" : "Broj je NIJE Armstrongov!";
