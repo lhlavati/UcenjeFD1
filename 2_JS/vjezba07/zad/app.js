@@ -120,7 +120,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         }
         left++;
         right--;
-        
       }
 
       rezultat.innerHTML = isPalindrom ? `${a} JE palindrom` : `${a} NIJE palindrom`;
@@ -129,7 +128,21 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '5':
       // rješavanje 5. zadatak
+      if(!b){
+        rezultat.innerHTML = "Molim upišite riječ u polje B!";
+        return;
+      }
 
+      let postoji = false;
+
+      for(let i = 0; i < stopRijeci.length; i++){
+        if (b.toLowerCase() === stopRijeci[i]) {
+          postoji = true;
+          break;
+        }
+      }
+
+      rezultat.innerHTML = postoji ? `${b} postoji u nizu stopRijeci` : `${b} NE postoji u nizu stopRijeci`;
       // kraj rješavanje 5. zadatak
     break;
     case '6':
