@@ -147,12 +147,34 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '6':
       // rješavanje 6. zadatak
+      let spojenStr = a.replaceAll(' ', '');
+      console.log(spojenStr);
+      
+      if(!a){
+        rezultat.innerHTML = "Molim upišite riječ u polje A!";
+        return;
+      }
+
+      let samoglasnici = ['a', 'e', 'i', 'o', 'u'];
+      let brojacSamog = 0;
+
+      for(let i = 0; i < spojenStr.length; i++){
+        for(let j = 0; j < samoglasnici.length; j++){
+          if(spojenStr[i].toLowerCase() === samoglasnici[j]){
+            brojacSamog++;
+          }
+        }
+      }
+
+      let brojSugl = spojenStr.length - brojacSamog;
+
+      rezultat.innerHTML = `${a} ima ${brojacSamog} samoglasnika i ${brojSugl} suglasnika!`;
 
       // kraj rješavanje 6. zadatak
     break;
     case '7':
       // rješavanje 7. zadatak
-
+      
       // kraj rješavanje 7. zadatak
     break;
 
