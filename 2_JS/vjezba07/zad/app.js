@@ -174,6 +174,34 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '7':
       // rješavanje 7. zadatak
+      let a7 = Number(a);
+      let b7 = Number(b);
+      let brojevi = '';
+
+      if(!a7 || !b7){
+        rezultat.innerHTML = "Polja ne mogu biti prazna!";
+        return;
+      }
+
+      if(isNaN(a7) || isNaN(b7)){
+        rezultat.innerHTML = "Molim upišite broj u polja A i B!";
+        return;
+      }
+
+      if(a7 === b7){
+        rezultat.innerHTML = "Brojevi su jedanki!";
+        return;
+      }
+
+      while(a7 < b7){
+        brojevi += '&nbsp;&nbsp;&nbsp;' + a7++;
+      }
+
+      while(a7 >= b7){
+        brojevi += '&nbsp;&nbsp;&nbsp;' + b7++;
+      }
+
+      rezultat.innerHTML = brojevi;
       
       // kraj rješavanje 7. zadatak
     break;
