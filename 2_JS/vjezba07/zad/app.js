@@ -96,6 +96,34 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '4':
       // rješavanje 4. zadatak
+      let broj = Number(a);
+      if(!a){
+        rezultat.innerHTML = "Molim upišite riječ u polje A!";
+        return;
+      }
+
+      if(!isNaN(broj)){
+        rezultat.innerHTML = "Molim upišite riječ, a ne broj u polje A!";
+        return;
+      }
+
+      let isPalindrom = true;
+      let revStr = a.toLowerCase().split('').reverse().join('').replaceAll(' ', '');
+
+      let left = 0;
+      let right = revStr.length - 1;
+
+      while(left < right) {
+        if(revStr[left] !== revStr[right]){
+          isPalindrom = false;
+          break;
+        }
+        left++;
+        right--;
+        
+      }
+
+      rezultat.innerHTML = isPalindrom ? `${a} JE palindrom` : `${a} NIJE palindrom`;
 
       // kraj rješavanje 4. zadatak
     break;
