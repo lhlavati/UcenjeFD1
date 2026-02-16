@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Odaberi zadatak</h1>
+        <div class="card">
+            <label>
+                <select id="zadatak">
+                    <option value="1">1. Površina pravokutnika</option>
+                    <option value="2">2. Pozitivan, negativan ili nula</option>
+                    <option value="3">3. Zbroj elemenata niza</option>
+                    <option value="4">4. Prosjek ocjena</option>
+                    <option value="5">5. Fibonaccijev niz</option>
+                    <option value="6">6. Preokret stringa</option>
+                    <option value="7">7. Brojanje samoglasnika</option>
+                    <option value="8">8. Pretvorba temperature</option>
+                    <option value="9">9. Sortiranje niza</option>
+                    <option value="10">10. Kalkulator</option>
+                </select>
+            </label>
+            <button id="zad" style="margin-left: 1rem;">
+                O zadatku
+            </button>
+            <div class="unosi">
+                <label>
+                    <p>A</p>
+                    <input id="a" class="unos" type="text" />
+                </label>
+                <div id="until-found-select" hidden="until-found">
+                    <select id="operacija">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+                <label>
+                    <p>B</p>
+                    <input id="b" class="unos" type="text" />
+                </label>
+            </div>
+            <h1>Rezultat:</h2>
+            <div id="rezultat">
+                -
+            </div>
+            <button id="izvedi">Izvedi</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
