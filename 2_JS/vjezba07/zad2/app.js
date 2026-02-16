@@ -42,7 +42,7 @@ document.getElementById("zad").addEventListener("click", () => {
         break;
       case "10":
         window.confirm("Klikni OK da se prikaže HTML element matematičkih operacija");
-        window.location.href="http://127.0.0.1:5501/2_JS/vjezba07/zad2/index.html#until-found-select"
+        window.location.href="https://edunova3.origo.hr/vjezba07_js/zad2/index.html#until-found-select"
         break;
       default:
         break;
@@ -88,7 +88,7 @@ document.getElementById("izvedi").addEventListener("click", () => {
         return;
       }
       
-      if(a === 0){
+      if(a == 0){
         rezultat.innerHTML = "Broj je 0";
       } else if(a < 0){
         rezultat.innerHTML = "Broj " + a + " je negativan";
