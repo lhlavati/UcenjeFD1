@@ -110,30 +110,34 @@ function izracunajStatistiku() {
   //         • Primjer polaznika ispod praga (50 bodova): ${polaznikKojiJePao ? polaznikKojiJePao.ime : "Nema nitko"}<br>
   //         • Mate Rimac se u bazi nalazi na indeksu: ${pozicijaPolaznik}
   //     `;
-  const poljeIspis = document.createElement("ul");
+  if (ispis.hasChildNodes()) {
+    return;
+  } else {
+    const poljeIspis = document.createElement("ul");
 
-  const poljeBodova = document.createElement("li");
-  poljeBodova.textContent = `Ukupno bodova (filtrirano): ${sumaBodova.toLocaleString("hr-HR")} | 
+    const poljeBodova = document.createElement("li");
+    poljeBodova.textContent = `Ukupno bodova (filtrirano): ${sumaBodova.toLocaleString("hr-HR")} | 
         Prosjek: ${(filtriraniPodaci.length > 0 ? sumaBodova / filtriraniPodaci.length : 0).toFixed(2)}`;
 
-  const poljePlatili = document.createElement("li");
-  poljePlatili.textContent = `Svi polaznici su platili: ${sviPodmirili ? "DA" : "NE"}`;
+    const poljePlatili = document.createElement("li");
+    poljePlatili.textContent = `Svi polaznici su platili: ${sviPodmirili ? "DA" : "NE"}`;
 
-  const poljeOdlicnih = document.createElement("li");
-  poljeOdlicnih.textContent = `Postoji netko s maksimalnim bodovima (100): ${imaOdlicnih ? "DA" : "NE"}`;
+    const poljeOdlicnih = document.createElement("li");
+    poljeOdlicnih.textContent = `Postoji netko s maksimalnim bodovima (100): ${imaOdlicnih ? "DA" : "NE"}`;
 
-  const poljeIspodPraga = document.createElement("li");
-  poljeIspodPraga.textContent = `Primjer polaznika ispod praga (50 bodova): ${polaznikKojiJePao ? polaznikKojiJePao.ime : "Nema nitko"}`;
+    const poljeIspodPraga = document.createElement("li");
+    poljeIspodPraga.textContent = `Primjer polaznika ispod praga (50 bodova): ${polaznikKojiJePao ? polaznikKojiJePao.ime : "Nema nitko"}`;
 
-  const poljeMateRimac = document.createElement("li");
-  poljeMateRimac.textContent = `Mate Rimac se u bazi nalazi na indeksu: ${pozicijaPolaznik}`;
+    const poljeMateRimac = document.createElement("li");
+    poljeMateRimac.textContent = `Mate Rimac se u bazi nalazi na indeksu: ${pozicijaPolaznik}`;
 
-  poljeIspis.appendChild(poljeBodova);
-  poljeIspis.appendChild(poljePlatili);
-  poljeIspis.appendChild(poljeOdlicnih);
-  poljeIspis.appendChild(poljeIspodPraga);
-  poljeIspis.appendChild(poljeMateRimac);
-  ispis.appendChild(poljeIspis);
+    poljeIspis.appendChild(poljeBodova);
+    poljeIspis.appendChild(poljePlatili);
+    poljeIspis.appendChild(poljeOdlicnih);
+    poljeIspis.appendChild(poljeIspodPraga);
+    poljeIspis.appendChild(poljeMateRimac);
+    ispis.appendChild(poljeIspis);
+  }
 
   // zadatak: preraditi kod tako da se ne koristi innerHTML već putem DOM-a
 }
