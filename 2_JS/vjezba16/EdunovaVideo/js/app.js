@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const students = [
-        { name: 'Tomislav Jakopec', video: 'video_20260302182840.mp4' },
-        { name: 'Luka Hlavati', video: 'video_20260302182925.mp4' },
-        { name: 'Roberto Perković', video: 'video_20260302183005.mp4' },
-        { name: 'Maja Šnalcer', video: 'video_20260302183017.mp4' },
-        { name: 'Tankred Kralj', video: 'video_20260302183102.mp4' },
-        { name: 'Rudolf Gergelj', video: 'video_20260302183401.mp4' },
-        { name: 'Hrvoje Mitrić', video: 'video_20260302190249.mp4' }
+        { name: 'Tomislav Jakopec', video: 'video_20260302182840.webm' },
+        { name: 'Luka Hlavati', video: 'video_20260302182925.webm' },
+        { name: 'Roberto Perković', video: 'video_20260302183005.webm' },
+        { name: 'Maja Šnalcer', video: 'video_20260302183017.webm' },
+        { name: 'Tankred Kralj', video: 'video_20260302183102.webm' },
+        { name: 'Rudolf Gergelj', video: 'video_20260302183401.webm' },
+        { name: 'Hrvoje Mitrić', video: 'video_20260302190249.webm' }
     ];
 
     const studentListContainer = document.getElementById('student-list');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             video.controls = true;
             const source = document.createElement('source');
             source.src = `video/${student.video}`;
-            source.type = 'video/mp4';
+            source.type = 'video/webm';
             video.appendChild(source);
             
             const name = document.createElement('h4');
