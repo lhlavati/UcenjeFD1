@@ -1,0 +1,9 @@
+Napravi mi mrežnu stranicu u kojoj bi prikazao videe polaznika Edunove (smjer Frontend Developer). U direktoriju 2_JS\vjezba16\EdunovaVideo napravi index.html i neka stranica bude moderna i responzivna. Napravi poddirektorije css i js u direktoriju 2_JS\vjezba16\EdunovaVideo, u css direktorij stavi css a u js direktorij stavi js. Napravi prikaz polaznika tako da stavis njihove inicijale u nekakav krug obojen random bojom po tvom izboru, ispod tog kruga ime i prezime, a ispod svakog polaznika stavi gumb koji klikom prikazuje odgovarajući video tog polaznika. Dodaj cool animacije na gumb. Stavi negdje i gumb da kada se klikne na njega da se prikažu svi videi polaznika u obliku galerije videa. Dizajn neka bude moderan sukladno trendovima u 2026. godini. Šaljem ti popis imena i prezimena polaznika sa njihovim pripadajućim videom, svi videi se nalazi u 2_JS\vjezba16\EdunovaVideo\video.
+
+Tomislav Jakopec - video_20260302182840
+Luka Hlavati - video_20260302182925
+Roberto Perković - video_20260302183005
+Maja Šnalcer - video_20260302183017
+Tankred Kralj - video_20260302183102
+Rudolf Gergelj - video_20260302183401
+Hrvoje Mitrić - video_20260302190249
