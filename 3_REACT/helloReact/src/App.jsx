@@ -10,6 +10,11 @@ function App() {
 
   return (
     <Container>
+
+      <a href="moduli/index.html">Moduli</a>
+
+      <hr />
+
       <Table striped bordered hover>
         <thead>
           <tr>
