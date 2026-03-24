@@ -41,7 +41,7 @@ export default function SmjerPregled() {
                 </thead>
                 <tbody>
                     {smjerovi && smjerovi.map((smjer) => (
-                        <tr>
+                        <tr key={smjer.sifra}>
                             <td>{smjer.naziv}</td>
                             <td>{smjer.trajanje}</td>
                             <td>
