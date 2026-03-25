@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
 import SmjerService from "../../services/smjerovi/SmjerService"
-import { Table } from "react-bootstrap"
+import { Table, Button } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
 import { GrValidate } from "react-icons/gr"
 import FormatDatuma from "../../components/FormatDatuma"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { RouteNames } from "../../constants"
 
 export default function SmjerPregled() {
 
-
+    const navigate = useNavigate()
     const [smjerovi, setSmjerovi] = useState([])
+
 
     useEffect(() => {
         ucitajSmjerove()
@@ -18,6 +19,10 @@ export default function SmjerPregled() {
 
     async function ucitajSmjerove() {
         await SmjerService.get().then((odgovor) => {
+
+            // u dev modu (na našem računalu) ispisati će dva puta, sve će biti u redu u produkciji
+          //  console.table(odgovor.data)
+
             setSmjerovi(odgovor.data)
         })
     }
@@ -25,8 +30,9 @@ export default function SmjerPregled() {
 
     return (
         <>
-            <Link to={RouteNames.SMJEROVI_NOVI} className="btn btn-success w-100 mb-3 mt-3">
-            Dodavanje novog smjera
+            <Link to={RouteNames.SMJEROVI_NOVI} 
+            className="btn btn-success w-100 mb-3 mt-3">
+                Dodavanje novog smjera
             </Link>
             <Table>
                 <thead>
@@ -45,7 +51,6 @@ export default function SmjerPregled() {
                             <td>{smjer.naziv}</td>
                             <td>{smjer.trajanje}</td>
                             <td>
-
                                 <NumericFormat
                                     value={smjer.cijena}
                                     displayType={'text'}
@@ -55,17 +60,21 @@ export default function SmjerPregled() {
                                     decimalScale={2}
                                     fixedDecimalScale
                                 />
-
                             </td>
                             <td>
-                                <FormatDatuma datum={smjer.datumPokretanja}/>                            </td>
+                                <FormatDatuma datum={smjer.datumPokretanja} />
+                            </td>
                             <td>
-                                <GrValidate 
-                                size={25}
-                                color={smjer.aktivan ? 'green' : 'red'}
+                                <GrValidate
+                                    size={25}
+                                    color={smjer.aktivan ? 'green' : 'red'}
                                 />
                             </td>
-                            <td></td>
+                            <td>
+                                <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
+                                    Promjena
+                                </Button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
