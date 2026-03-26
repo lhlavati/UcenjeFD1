@@ -31,7 +31,7 @@ export default function SmjerPromjena(){
 
     async function promjeni(smjer){
         //console.table(smjer) // ovo je za kontrolu da li je sve OK
-        await SmjerService.promjeni(smjer).then(()=>{
+        await SmjerService.promjeni(params.sifra, smjer).then(()=>{
             navigate(RouteNames.SMJEROVI)
         })
     }
