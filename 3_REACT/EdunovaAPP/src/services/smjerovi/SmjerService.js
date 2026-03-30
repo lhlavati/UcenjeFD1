@@ -2,7 +2,7 @@ import { smjerovi } from "./SmjerPodaci";
 
 // 1/4 Read od CRUD
 async function get() {
-    return {data: [...smjerovi]}
+    return {data: [...smjerovi]} // [...smjerovi] je kopija smjerova
 }
 
 async function getBySifra(sifra) {
@@ -30,10 +30,17 @@ function nadiIndex(sifra){
     return smjerovi.findIndex(s => s.sifra === parseInt(sifra))
 }
 
+// 4/4 Delete od CRUD
+async function obrisi(sifra) {
+    const index = nadiIndex(sifra)
+    smjerovi.splice(index,1)
+}
+
 
 export default{
     get,
     dodaj,
     getBySifra,
-    promjeni
+    promjeni,
+    obrisi
 }
